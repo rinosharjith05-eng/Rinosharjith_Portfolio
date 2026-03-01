@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rino Sharjith | Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+   
+
+  </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+  <nav>
+    <div class="logo">RINO <span style="color: rgb(0, 75, 214);">SHARJITH</span></div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <div></div><div></div><div></div>
+    </div>
+  </nav>
+
+    <button id="themeToggle" class="cv-btn" style="position:fixed;bottom:25px;right:25px;z-index:2000;">
+        🌙 Dark Mode
+    </button>
+
+
+    <!-- HERO -->
+
+  <section id="home" class="fade-in">
+    <div class="text-content">
+      <h1><span class="typing"></span></h1>
+      <p>I'm a developer who loves creating clean and modern projects<br>Scroll down to learn more about me!</p>
+      <a href="Rino Resume .pdf" download>
+        <button class="cv-btn">Download Resume</button>
+      </a>
+    </div>
+    <div class="profile-container">
+
+    </div>
+    <div class="fade-in"></div>
+        <img src="icon.jpg" alt="Profile" class="profile-img" />
+    </div>
+
+  </section>
+
+
+    <!-- ABOUT -->
+
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>I'm a passionate programmer and designer who loves working with modern web technologies.  
+      My goal is to build websites that are functional, user-friendly, and visually engaging.  
+      When I'm not coding, you'll find me designing graphics or dreaming up new creative ideas.</p>
+  </section>
+
+
+    <!-- SKILLS SECTION -->
+
+        <section class="fade-in">
+            <h2>Skills</h2>
+
+
+    <!-- Programming Languages -->
+
+            <div class="skills-category">
+                <h3>💻 Programming Languages</h3>
+                <div class="skills-grid">
+                <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+                <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+                <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+                <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"><span>Node.js</span></div>
+                <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
+                <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+                </div>
+            </div>
+
+
+    <!-- Graphic Design -->
+
+            <div class="skills-category">
+                <h3>🎨 Graphic Design</h3>
+                <div class="skills-grid">
+                <div class="skill bright-bg"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator"><span>Adobe Illustrator</span></div>
+                <div class="skill bright-bg"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop"><span>Adobe Photoshop</span></div>
+                <div class="skill bright-bg"><img src="https://img.icons8.com/fluency/48/canva.png" alt="Canva"><span>Canva</span></div>
+                <div class="skill bright-bg"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"><span>Figma</span></div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- PROJECTS -->
+
+        <section id="projects" class="fade-in">
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <h3>🌐 Personal Portfolio</h3>
+              <p>A clean, responsive portfolio showcasing skills and projects.</p>
+            </div>
+            <div class="project-card">
+              <h3>📊 Vote Counter App</h3>
+              <p>JavaScript app for real-time vote counting with instant results.</p>
+            </div>
+            <div class="project-card">
+              <h3>🈺 Business Websites</h3>
+              <p>Custom-built websites for businesses to enhance their online presence and user experience.</p>
+            </div>
+          </div>
+        </section>  
+
+
+    <!-- CONTACT -->
+
+  <section id="contact" class="fade-in">
+    <h2>Contact</h2>
+    <p>Let’s collaborate or discuss a project! Fill out the form below 👇</p>
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="socials">
+      <a href="https://github.com/rinosharjith05-eng" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/rino-sharjith-r-79a07a329" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://wa.me/qr/NE4AY3EOI32GA1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/arceus_the_fire" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:rinosharjith05@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <footer>© 2025 RINO SHARJITH. All rights reserved.</footer>
+
+
+    <!-- Typing Animation -->
+
+  <script>
+    const textArray = ["Hello, I'm RINO SHARJITH", "I'm a Web Developer", "I'm a Graphic Designer", "I'm a Creative Coder"];
+    const typingElement = document.querySelector(".typing");
+    let textIndex = 0, charIndex = 0;
+
+    function typeText() {
+      if (charIndex < textArray[textIndex].length) {
+        typingElement.textContent += textArray[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeText, 100);
+      } else setTimeout(eraseText, 1500);
+    }
+
+    function eraseText() {
+      if (charIndex > 0) {
+        typingElement.textContent = textArray[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseText, 60);
+      } else {
+        textIndex = (textIndex + 1) % textArray.length;
+        setTimeout(typeText, 100);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => setTimeout(typeText, 500));
+  </script>
+
+
+    <!-- Scroll Fade-in -->
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.15 });
+    sections.forEach(sec => observer.observe(sec));
+  </script>
+
+
+    <!-- Hamburger -->
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+  <script>
+      const themeToggle = document.getElementById("themeToggle");
+      const body = document.body;
+
+      // Load saved theme
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+          themeToggle.textContent = "☀️ Light Mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+          const darkModeEnabled = body.classList.contains("dark-mode");
+          themeToggle.textContent = darkModeEnabled ? "☀️ Light Mode" : "🌙 Dark Mode";
+          localStorage.setItem("theme", darkModeEnabled ? "dark" : "light");
+      });
+  </script>
+ <script>
+  if (window.innerWidth <= 1024) {
+    window.location.href = "mobile.html";
+  }
+</script>
+
+</body>
+</html>
