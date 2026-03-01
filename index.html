@@ -127,12 +127,12 @@
 
   <section id="contact" class="fade-in">
     <h2>Contact</h2>
-    <p>Let’s collaborate or discuss a project! Fill out the form below 👇</p>
-    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+    <p>Let's collaborate or discuss a project! Fill out the form below 👇</p>
+    <form id="contactForm" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="whatsapp-btn">Send via WhatsApp</button>
     </form>
 
     <div class="socials">
@@ -218,11 +218,31 @@
           localStorage.setItem("theme", darkModeEnabled ? "dark" : "light");
       });
   </script>
- <script>
-  if (window.innerWidth <= 1024) {
-    window.location.href = "mobile.html";
-  }
-</script>
+    <script>
+      (function(){
+        const form = document.getElementById('contactForm');
+        if (!form) return;
+        // Replace with your full international number (country code + number, no + or leading zeros)
+        const phone = '919361949941';
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          const name = form.querySelector('input[name="name"]').value.trim();
+          const email = form.querySelector('input[name="email"]').value.trim();
+          const message = form.querySelector('textarea[name="message"]').value.trim();
+          const textParts = [];
+          if (name) textParts.push(`Name: ${name}`);
+          if (email) textParts.push(`Email: ${email}`);
+          if (message) textParts.push(`Message: ${message}`);
+          const text = textParts.join(' | ');
+          const url = `https://wa.me/919361949941?text=${encodeURIComponent(text)}`;
+          window.open(url, '_blank');
+        });
+      })();
+
+      if (window.innerWidth <= 1024) {
+        window.location.href = "mobile.html";
+      }
+    </script>
 
 </body>
 </html>
